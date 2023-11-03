@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>05_兄弟选择器</title>
+  <style>
+    /* 选中div后紧紧相邻的兄弟p元素 -- 相邻兄弟选择器 */
+    /* div+p {
+      color: red;
+    } */
+    /* 选中div后所有的兄弟p元素 -- 通用兄弟选择器 */
+    div~p {
+      color: red;
+    }
+    li+li {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div>水果</div>
+  <p>苹果</p>
+  <p>香蕉</p>
+  <p>梨</p>
+  <ul>
+    <li>李子</li>
+    <li>栗子</li>
+    <li>梨子</li>
+  </ul>
+</body>
+</html>

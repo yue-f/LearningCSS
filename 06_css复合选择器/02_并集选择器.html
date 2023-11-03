@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>02_并集选择器</title>
+  <style>
+    .apple {
+      color: red;
+    }
+    .fruit {
+      color: yellow;
+    }
+    .orange {
+      color: orange;
+    }
+    .tangerine {
+      color:#FFA500;
+    }
+    /* 选中id为grapefruit，或类名为apple、fruit、orange、tangerine的元素 */
+    .apple,
+    .fruit,
+    .orange, 
+    .tangerine,
+    #grapefruit {
+      font-size: 50px;
+      background-color: gray;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="apple">苹果</h2>
+  <h2 class="fruit">香蕉</h2>
+  <h2 >梨</h2>
+  <hr>
+  <p class="orange">橙子</p>
+  <p class="tangerine">橘子</p>
+  <p id="grapefruit">柚子</p>
+</body>
+</html>

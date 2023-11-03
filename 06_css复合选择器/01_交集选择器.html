@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>01_交集选择器</title>
+  <style>
+    .apple {
+      color: red;
+    }
+    .fruit {
+      color: yellow;
+    }
+    /* 选中：类名为fruit的p元素，此种写法用的非常多 */
+    p.fruit {
+      color: orange;
+    }
+    /* 选中：类名包含apple和fruit的元素 */
+    .apple.fruit {
+      color:green;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="apple">苹果</h2>
+  <h2 class="fruit">香蕉</h2>
+  <h2 class="apple fruit">梨</h2>
+  <hr>
+  <p class="fruit">橙子</p>
+  <p class="fruit">橘子</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>06_属性选择器</title>
+  <style>
+    /* 第一种写法：选中具有title属性的元素 */
+    [title] {
+      color: red;
+    }
+     /* 第二种写法：选中具有title属性，且属性值为pear的元素 */
+    [title="pear"] {
+      color: green;
+    }
+    /* 第三种写法：选中具有title属性，且属性值以字母b开头的元素 */
+    [title^="b"] {
+      color: yellow;
+    }
+    /* 第四种写法：选中具有title属性，且属性值以字母e结尾的元素 */
+    [title$="e"] {
+      color: chocolate;
+    }
+    /* 第五种写法：选中具有title属性，且属性值包含字母u的元素 */
+    [title*="u"] {
+      color: blue;
+    }
+    
+  </style>
+</head>
+<body>
+  <div title="fruit">水果</div>
+  <div title="apple">苹果</div>
+  <div title="banana">香蕉</div>
+  <div title="pear">梨</div>
+  <div title="orange">橙子</div>
+ 
+</body>
+</html>

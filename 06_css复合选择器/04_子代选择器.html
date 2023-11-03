@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>04_子代选择器</title>
+  <style>
+    /* 选中的是div中的子代（儿子）a元素 */
+    div>a {
+      color:red;
+    }
+    div>p>a {
+      color:skyblue;
+    }
+    /* 选中的是类名为lizi的元素中的子代a元素 */
+    .lizi>a {
+      color: chartreuse;
+    }
+    /* 选中的是div中id为taozi的元素中的子代a元素 */
+    div#taozi>a {
+      color: chocolate;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <a href="#">橙子</a>
+    <a href="#">橘子</a>
+    <a href="#">柚子</a>
+    <p>
+      <a href="#">西柚</a>
+      <div class="lizi">
+        <a href="#">李子</a>
+      </div>
+      <div id="taozi">
+        <a href="#">桃子</a>
+      </div>
+    </p>
+  </div>
+  
+</body>
+</html>

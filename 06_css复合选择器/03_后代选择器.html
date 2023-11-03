@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>03_后代选择器</title>
+  <style>
+    /* 选中ul中的所有li */
+   ul li {
+    color: red;
+   }
+  /* 选中ul中所有li中的a标签 */
+   ul li a {
+    color: orange;
+   }
+   /* 选中ol中的所有li */
+   ol li {
+    color: green;
+   }
+   /* 选中ol中所有li中的a标签 */
+   ol li a {
+    color: gray;
+   }
+   /* 选中类名为demo元素中的所有li */
+   .demo li {
+    color:blueviolet;
+   }
+   /* 选中类名为demo元素中id为guo的元素 */
+   .demo #guo {
+    color: blue;
+   }
+    /* 选中类名为demo元素中的所有类名为front-end的div */
+   .demo div.front-end {
+    color:cadetblue;
+   }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>
+      <a href="#">梨</a>
+    </li>
+  </ul>
+  <hr>
+  <ol>
+    <li>番茄</li>
+    <li>黄瓜</li>
+    <li>
+      <a href="#">土豆</a>
+    </li>
+  </ol>
+  <hr>
+  <ol class="demo">
+    <li id="guo">锅</li>
+    <div class="front-end">分类：蒸锅、煮锅、炒锅</div></div>
+    <li>碗</li>
+    <li>瓢</li>
+    <li>盆</li>
+  </ol>
+  
+</body>
+</html>
